@@ -1,0 +1,9 @@
+# Core dependencies
+qrcode[pil]==7.4.2
+flask==3.0.3
+adbutils==1.2.9
+
+# Optional dependencies (uncomment if you want webcam QR scanning support)
+ opencv-python==4.10.0.84
+
+ pyzbar==0.1.9
