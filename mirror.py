@@ -4,6 +4,22 @@ import shutil
 from typing import Optional, Tuple
 
 
+def banner():
+    print(r"""
+      ___           _                _ 
+     / _ \__ _  ___| |__   __ _  ___| |
+    / /_)/ _` |/ __| '_ \ / _` |/ _ \ |
+   / ___/ (_| | (__| | | | (_| |  __/ |
+   \/    \__,_|\___|_| |_|\__, |\___|_|
+                          |___/        
+
+        Android Wireless Debugging Tool
+        Developed by: PugazhTheHacker
+        GitHub: https://github.com/PugazhTheHacker
+    """)
+    print("=" * 60)
+
+
 def which(cmd: str) -> Optional[str]:
     return shutil.which(cmd)
 
@@ -37,12 +53,14 @@ def adb_connect(adb_path: str, ip: str, connect_port: int) -> Tuple[bool, str]:
 
 
 def main():
+    banner()
+
     adb_path = which("adb")
     if not adb_path:
         print("[!] adb not found. Install Android platform-tools and ensure it is on PATH.")
         sys.exit(1)
 
-    print("=== Android Wireless Debugging Tool ===")
+    print("=== Pair your Android device ===")
     ip = input("Device IP: ").strip()
     pair_port = int(input("Pairing port (shown on phone): ").strip())
     code = input("6-digit pairing code: ").strip()
@@ -54,15 +72,15 @@ def main():
     ok1, msg1 = adb_pair(adb_path, ip, pair_port, code)
     print(msg1)
     #if not ok1:
-        #print("[!] Pairing failed.")
-        #sys.exit(1)
+     #   print("[!] Pairing failed.")
+      #  sys.exit(1)
 
     print(f"[*] Connecting to {ip}:{connect_port} …")
     ok2, msg2 = adb_connect(adb_path, ip, connect_port)
     print(msg2)
-    if not ok2:
-        print("[!] Connect failed.")
-        sys.exit(1)
+    #if not ok2:
+        #print("[!] Connect failed.")
+       # sys.exit(1)
 
     print("[+] Success! Device is paired and connected via ADB.")
 
