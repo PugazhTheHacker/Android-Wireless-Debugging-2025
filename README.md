@@ -1,13 +1,6 @@
 
 # Android-port-forwarding
 /
-/
-/
-/
-/
-/
-//
-/
 
 
 
