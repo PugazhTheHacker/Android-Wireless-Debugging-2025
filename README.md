@@ -10,8 +10,8 @@ git clone https://github.com/PugazhTheHacker/Android-Wireless-Debugging-2025.git
 ```
 ```
 cd ./Downloads
-cd ./
----
+cd ./Debugging.py
+```
 
 ## 2. Enable USB/Wireless Debugging 📶
 1. Go to **Settings → System → Developer options**.  
