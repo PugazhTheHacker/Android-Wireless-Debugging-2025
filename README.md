@@ -5,9 +5,42 @@ It automates `adb pair` and `adb connect`, making it easy to pair and connect yo
 
 **GitHub Repository:**
 ```
-git clone 
+git clone https://github.com/PugazhTheHacker/Android-Wireless-Debugging-2025.git
+
 ```
-## 1. Enable Developer Options 📱
-1. Open **Settings → About phone** on your Android device.  
-2. Find **Build number**.  
-3. Tap it **7 times** until you see:
+```
+cd ./Downloads
+cd ./
+---
+
+## 2. Enable USB/Wireless Debugging 📶
+1. Go to **Settings → System → Developer options**.  
+2. Turn on **USB Debugging**.  
+3. Turn on **Wireless Debugging**.
+
+---
+
+## 3. Pair Your Device via Wireless Debugging
+1. In **Wireless Debugging settings → Tap "Pair device with pairing code"**.  
+2. You will see:  
+- **IP address & Port** (for pairing)  
+- **6-digit pairing code**  
+- **Connect port**
+
+
+## 4. Use This Tool ⚙️
+1. Install dependencies:
+```
+pip install -r requirement.txt
+```
+2.Run the script:
+```
+python Debugging.py
+```
+3.Enter the required information when prompted:
+Device IP:
+Pairing port:
+6-digit code:
+Connect port:
+
+4.If successful, your device will be connected via Wi-Fi.
