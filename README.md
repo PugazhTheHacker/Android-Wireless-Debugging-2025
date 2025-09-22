@@ -20,6 +20,7 @@ cd ./Debugging.py
 
 ---
 
+
 ## 3. Pair Your Device via Wireless Debugging
 1. In **Wireless Debugging settings → Tap "Pair device with pairing code"**.  
 2. You will see:  
