@@ -45,3 +45,4 @@ Pairing port:
 Connect port:
 
 4.If successful, your device will be connected via Wi-Fi.
+
