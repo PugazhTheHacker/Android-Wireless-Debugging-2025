@@ -3,7 +3,7 @@
 A lightweight Python tool that simplifies Android Wireless Debugging.  
 It automates `adb pair` and `adb connect`, making it easy to pair and connect your Android device over Wi-Fi directly from the terminal. No web UI, no extra dependencies — just fast, clean, and hacker-friendly. 🚀
 
-**GitHub Repository:**
+**GitHub Repository:**    
 ```
 git clone https://github.com/PugazhTheHacker/Android-Wireless-Debugging-2025.git
 
