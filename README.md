@@ -7,7 +7,7 @@ It automates `adb pair` and `adb connect`, making it easy to pair and connect yo
 ```
 git clone https://github.com/PugazhTheHacker/Android-Wireless-Debugging-2025.git
 
-```
+``` 
 ```
 cd ./Downloads
 cd ./Debugging.py
